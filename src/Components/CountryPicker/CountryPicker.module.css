@@ -1,4 +1,15 @@
-.formControl {
-    margin-bottom: 30px !important;
-    width: 30%;;
+.select {
+  margin-bottom: 1.5rem;
+  padding: 0.6rem 1rem;
+  min-width: 220px;
+  font-size: 0.95rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: white;
+  color: #0f172a;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #3b82f6;
 }

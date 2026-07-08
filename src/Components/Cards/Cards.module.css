@@ -1,22 +1,61 @@
 .container {
-    margin: 50px 0;
-    width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 3rem 0;
+  width: min(900px, 90%);
 }
+
 .card {
-    margin: 0 2% !important;
+  padding: 1.5rem;
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+  border-bottom: 6px solid transparent;
 }
+
 .infected {
-    border-bottom: 10px solid rgba(0, 0, 255, .5);
+  border-bottom-color: #3b82f6;
 }
+
 .recovered {
-    border-bottom: 10px solid rgba(0, 255, 0, .5);
+  border-bottom-color: #22c55e;
 }
+
 .deaths {
-    border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+  border-bottom-color: #ef4444;
+}
+
+.label {
+  margin: 0 0 0.4rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+}
+
+.value {
+  margin: 0 0 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.date {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.note {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  color: #475569;
 }
 
 @media only screen and (max-width: 768px) {
-    .card {
-        margin-bottom: 20px !important;
-    }
+  .container {
+    grid-template-columns: 1fr;
+  }
 }
